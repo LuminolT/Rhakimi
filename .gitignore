@@ -1,0 +1,69 @@
+# -----------------------------
+# Python bytecode / cache
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+*.dll
+*.dylib
+
+# -----------------------------
+# Packaging / build artifacts
+# -----------------------------
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# uv / hatch / virtual env (uv doesn't create venv by default, but guard anyway)
+.venv/
+venv/
+.env/
+env/
+
+# uv lock file (usually committed, but if you prefer ignoring it uncomment)
+# uv.lock
+
+# -----------------------------
+# Test cache (pytest)
+# -----------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# -----------------------------
+# VSCode settings
+# -----------------------------
+.vscode/
+# (If you want specific settings.json committed, remove the above line)
+
+# -----------------------------
+# OS / Editor junk
+# -----------------------------
+.DS_Store
+Thumbs.db
+
+# -----------------------------
+# Logs
+# -----------------------------
+*.log
+
+# -----------------------------
+# Other Rhajimi-specific ignores
+# -----------------------------
+# compiled artifacts generated in rhakimi/
+rhakimi/*.c
+rhakimi/*.cpp
+
+# uv build temp (if any future version adds local cache)
+/.uv/
+
+# Images / diagrams (keep them if necessary)
+# If you want to exclude large generated diagrams, uncomment:
+# images/*.png
