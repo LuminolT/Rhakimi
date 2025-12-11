@@ -2,6 +2,13 @@
 
 Rhakimi (a French-derived word whose English pronunciation is similar to *ha-ji-mi*) is an intentionally over-engineered, academically straight-faced V-shaped encoding system that lifts UTF-8 text into an integer latent; expands it within a high-radix space induced by a user-specified table (e.g., `"哈基米"`); and projects it back into a fixed-length codeword stream composed exclusively of table characters.
 
+> [!WARNING]
+> **Rhajimi / LambdaNet is an entertainment-oriented project.**  
+> Nothing here should be interpreted as cryptographic security, academic rigor,  
+> or serious engineering guidance.  
+>
+> You are still welcome to use, modify, and extend the reversible encoder.
+
 Decoding inverts every layer exactly, including the sentinel byte and explicit length prefix, enabling fully deterministic recovery even when the encoded output looks like a deranged scripture in a custom alphabet.
 
 ![LambdaNet Architecture](./images/LambdaNet.png)
